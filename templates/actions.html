@@ -1,0 +1,162 @@
+$def with ()
+
+<html>
+<head>
+  <title>Acciones con DataFrame</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    .action-group {
+      flex: 1 1 300px;
+      min-width: 250px;
+      background-color: #fafafa;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    .action-group h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 6px;
+      margin: 6px 0 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>Elige una acción para el DataFrame</header>
+
+  <div class="toolbar">
+
+    <div class="action-group">
+      <h3>Mostrar primeras N filas</h3>
+      <form method="POST" action="/action">
+        <input type="number" name="n" value="5" min="1">
+        <input type="hidden" name="action" value="head">
+        <input type="submit" value="Mostrar Head">
+      </form>
+    </div>
+
+    <div class="action-group">
+      <h3>Mostrar últimas N filas</h3>
+      <form method="POST" action="/action">
+        <input type="number" name="n" value="5" min="1">
+        <input type="hidden" name="action" value="tail">
+        <input type="submit" value="Mostrar Tail">
+      </form>
+    </div>
+
+    <div class="action-group">
+      <h3>Información</h3>
+      <form method="POST" action="/action">
+        <input type="hidden" name="action" value="info">
+        <input type="submit" value="Mostrar Info">
+      </form>
+      <form method="POST" action="/action">
+        <input type="hidden" name="action" value="describe">
+        <input type="submit" value="Mostrar Describe">
+      </form>
+      <form method="POST" action="/action">
+        <input type="hidden" name="action" value="shape">
+        <input type="submit" value="Mostrar Shape">
+      </form>
+      <form method="POST" action="/action">
+        <input type="hidden" name="action" value="columns">
+        <input type="submit" value="Mostrar Columnas">
+      </form>
+    </div>
+
+    <div class="action-group">
+      <h3>Seleccionar una columna</h3>
+      <form method="POST" action="/action">
+        <input type="text" name="col" placeholder="Nombre columna" required>
+        <input type="hidden" name="action" value="select_one">
+        <input type="submit" value="Mostrar Columna">
+      </form>
+    </div>
+
+    <div class="action-group">
+      <h3>Seleccionar varias columnas</h3>
+      <form method="POST" action="/action">
+        <input type="text" name="col" placeholder="col1,col2,col3" required>
+        <input type="hidden" name="action" value="select_multi">
+        <input type="submit" value="Mostrar Columnas">
+      </form>
+    </div>
+
+    <div class="action-group">
+      <h3>Filtrar columna</h3>
+      <form method="POST" action="/action">
+        <input type="hidden" name="action" value="filter">
+        <input type="text" name="col" placeholder="Columna">
+        <select name="op">
+          <option value=">">&gt;</option>
+          <option value="<">&lt;</option>
+          <option value="==">==</option>
+        </select>
+        <input type="text" name="valor" placeholder="Valor">
+        <input type="submit" value="Filtrar">
+      </form>
+    </div>
+
+  </div>
+
+  <a href="/">Subir otro archivo</a>
+</body>
+</html>
