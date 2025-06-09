@@ -2,6 +2,7 @@ import web
 import pandas as pd
 import numpy as np
 import io
+import os
 
 urls = (
     '/', 'Index',
@@ -23,10 +24,22 @@ class Upload:
         global df_global
         x = web.input(myfile={})
         file = x['myfile']
+
         if not file.filename.endswith('.csv'):
             return "Solo se permiten archivos CSV"
-        data = file.file.read()
-        df_global = pd.read_csv(io.BytesIO(data))
+
+        # Crear carpeta 'uploads' si no existe
+        if not os.path.exists("uploads"):
+            os.makedirs("uploads")
+
+        # Guardar el archivo en la carpeta 'uploads'
+        filepath = os.path.join("uploads", file.filename)
+        with open(filepath, "wb") as f:
+            f.write(file.file.read())
+
+        # Leer el CSV desde el archivo guardado
+        df_global = pd.read_csv(filepath)
+
         return render.actions()
 
 class Action:
@@ -81,9 +94,7 @@ class Action:
             if col in df_global.columns and valor and op:
                 try:
                     val_num = float(valor)
-                    # columnas que queremos mostrar junto con la filtrada
                     columnas_validas = ['nombre', 'matricula', col]
-                    # Verificamos que esas columnas existan en el DataFrame
                     columnas_validas = [c for c in columnas_validas if c in df_global.columns]
 
                     if op == '>':

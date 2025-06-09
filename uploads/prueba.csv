@@ -1,0 +1,101 @@
+nombre,matricula,carrera,cal_asignatura1,cal_asignatura2,cal_asignatura3
+Alumno1,M01000,Arquitectura,77,98,51
+Alumno2,M01001,Contabilidad,56,66,84
+Alumno3,M01002,Derecho,58,98,65
+Alumno4,M01003,Contabilidad,57,51,90
+Alumno5,M01004,Contabilidad,61,51,85
+Alumno6,M01005,Medicina,83,77,82
+Alumno7,M01006,Derecho,82,72,53
+Alumno8,M01007,Derecho,97,86,82
+Alumno9,M01008,Derecho,72,81,63
+Alumno10,M01009,Contabilidad,73,82,70
+Alumno11,M01010,Arquitectura,86,50,97
+Alumno12,M01011,Derecho,84,68,69
+Alumno13,M01012,Contabilidad,93,51,57
+Alumno14,M01013,Medicina,89,93,56
+Alumno15,M01014,Arquitectura,71,75,52
+Alumno16,M01015,Medicina,76,81,66
+Alumno17,M01016,Arquitectura,84,55,82
+Alumno18,M01017,Contabilidad,50,81,97
+Alumno19,M01018,Ing. Sistemas,84,53,61
+Alumno20,M01019,Arquitectura,86,60,100
+Alumno21,M01020,Medicina,96,66,71
+Alumno22,M01021,Contabilidad,63,87,71
+Alumno23,M01022,Arquitectura,52,73,95
+Alumno24,M01023,Ing. Sistemas,50,54,79
+Alumno25,M01024,Ing. Sistemas,54,83,87
+Alumno26,M01025,Derecho,75,55,87
+Alumno27,M01026,Derecho,63,71,94
+Alumno28,M01027,Medicina,88,60,100
+Alumno29,M01028,Arquitectura,76,97,57
+Alumno30,M01029,Arquitectura,58,65,76
+Alumno31,M01030,Derecho,64,82,76
+Alumno32,M01031,Arquitectura,64,58,83
+Alumno33,M01032,Arquitectura,75,55,70
+Alumno34,M01033,Ing. Sistemas,91,65,79
+Alumno35,M01034,Derecho,62,78,82
+Alumno36,M01035,Contabilidad,100,52,77
+Alumno37,M01036,Derecho,81,69,96
+Alumno38,M01037,Contabilidad,88,85,82
+Alumno39,M01038,Ing. Sistemas,98,68,54
+Alumno40,M01039,Medicina,81,75,97
+Alumno41,M01040,Arquitectura,53,52,68
+Alumno42,M01041,Ing. Sistemas,79,68,53
+Alumno43,M01042,Arquitectura,86,69,84
+Alumno44,M01043,Medicina,72,81,98
+Alumno45,M01044,Medicina,88,56,66
+Alumno46,M01045,Ing. Sistemas,94,90,93
+Alumno47,M01046,Medicina,64,82,77
+Alumno48,M01047,Contabilidad,92,89,79
+Alumno49,M01048,Medicina,78,88,78
+Alumno50,M01049,Arquitectura,85,67,95
+Alumno51,M01050,Arquitectura,62,89,55
+Alumno52,M01051,Arquitectura,81,50,84
+Alumno53,M01052,Arquitectura,56,60,90
+Alumno54,M01053,Contabilidad,100,77,86
+Alumno55,M01054,Derecho,71,74,73
+Alumno56,M01055,Ing. Sistemas,77,99,78
+Alumno57,M01056,Arquitectura,51,72,98
+Alumno58,M01057,Medicina,91,80,95
+Alumno59,M01058,Arquitectura,94,79,80
+Alumno60,M01059,Medicina,55,91,84
+Alumno61,M01060,Medicina,77,84,82
+Alumno62,M01061,Arquitectura,77,56,70
+Alumno63,M01062,Contabilidad,93,65,81
+Alumno64,M01063,Medicina,93,75,72
+Alumno65,M01064,Medicina,69,97,82
+Alumno66,M01065,Arquitectura,79,98,52
+Alumno67,M01066,Medicina,60,51,67
+Alumno68,M01067,Medicina,77,50,74
+Alumno69,M01068,Arquitectura,74,97,91
+Alumno70,M01069,Arquitectura,88,61,80
+Alumno71,M01070,Ing. Sistemas,82,54,52
+Alumno72,M01071,Contabilidad,50,86,89
+Alumno73,M01072,Contabilidad,76,81,95
+Alumno74,M01073,Medicina,62,58,73
+Alumno75,M01074,Contabilidad,90,90,99
+Alumno76,M01075,Medicina,52,84,81
+Alumno77,M01076,Ing. Sistemas,88,68,96
+Alumno78,M01077,Arquitectura,55,97,71
+Alumno79,M01078,Arquitectura,57,65,72
+Alumno80,M01079,Arquitectura,76,52,51
+Alumno81,M01080,Contabilidad,58,69,76
+Alumno82,M01081,Ing. Sistemas,86,73,91
+Alumno83,M01082,Contabilidad,82,82,51
+Alumno84,M01083,Contabilidad,100,73,75
+Alumno85,M01084,Ing. Sistemas,91,60,66
+Alumno86,M01085,Ing. Sistemas,93,98,89
+Alumno87,M01086,Ing. Sistemas,73,57,82
+Alumno88,M01087,Ing. Sistemas,64,85,58
+Alumno89,M01088,Arquitectura,81,87,92
+Alumno90,M01089,Derecho,81,89,97
+Alumno91,M01090,Derecho,73,69,88
+Alumno92,M01091,Ing. Sistemas,90,84,78
+Alumno93,M01092,Derecho,98,97,91
+Alumno94,M01093,Derecho,98,74,75
+Alumno95,M01094,Ing. Sistemas,61,84,84
+Alumno96,M01095,Derecho,88,74,99
+Alumno97,M01096,Contabilidad,51,78,74
+Alumno98,M01097,Medicina,52,67,73
+Alumno99,M01098,Medicina,98,95,62
+Alumno100,M01099,Ing. Sistemas,86,67,56
